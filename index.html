@@ -369,11 +369,19 @@
     fontSize.addEventListener('input', function () {
         document.getElementById('editable').style.fontSize = fontSize.value+"px";
     }, false);
+	
+function handleOrientation(event) {
+  const absolute = event.absolute;
+  const alpha = event.alpha;
+  const beta = event.beta;
+  const gamma = event.gamma;
+	document.getElementById("hej").innerHTML = alpha;
 
-    window.addEventListener('deviceorientation', function(event) {
-        document.getElementById("hej").innerHTML = event.alpha;
-        console.log(event.alpha + ' : ' + event.beta + ' : ' + event.gamma);
-    });
+  // Do stuff with the new orientation data
+}
+	
+window.addEventListener("deviceorientation", handleOrientation);
+
 
 
 
