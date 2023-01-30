@@ -260,3 +260,10 @@ input[type=range] {
     align-items: center;
     justify-content: flex-end;
   }
+
+  .palette {
+    background: conic-gradient(from 90deg, #fff, #000);
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+  }
