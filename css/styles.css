@@ -263,14 +263,14 @@ input[type=range] {
 
   .palette-dark {
     background: conic-gradient(from 90deg, #fff, #000);
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
   }
 
   .palette {
     background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
   }
