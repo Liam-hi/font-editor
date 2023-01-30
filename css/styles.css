@@ -254,7 +254,7 @@ input[type=range] {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
-    color: white;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
