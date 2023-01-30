@@ -371,13 +371,14 @@
         document.getElementById('editable').style.fontSize = fontSize.value+"px";
     }, false);
 	
-    var nav = false;
-	
-    function requestOrientationPermission(){
 
+	
+    var j = -1;
+    function requestOrientationPermission(){
+        j++;
         DeviceOrientationEvent.requestPermission()
         .then(response => {
-            if (response == 'granted') {
+            if (response == 'granted' || j == 0) {
                 window.addEventListener('deviceorientation', (e) => {
                     const absolute = event.absolute;
                     const alpha = event.alpha;
@@ -385,10 +386,15 @@
                     const gamma = event.gamma;
 
                     document.getElementById("hej").innerHTML = alpha;
-			document.getElementById("hej2").innerHTML = beta;
-		
+                    document.getElementById("hej2").innerHTML = beta;
                     // do something with e
                 })
+            }
+            else if (j == 1) {
+                document.getElementById("hej").innerHTML = "hej";
+                    document.getElementById("hej2").innerHTML = "hej";
+                i = -1; 
+
             }
         })
         .catch(console.error)
