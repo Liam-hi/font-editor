@@ -387,11 +387,17 @@
         const beta = Math.abs(event.beta);
         /* const gamma = event.gamma; */
 
-        var bgHue = Math.round(alpha); //value represents the motion of the device around the z axis, represented in degrees with values ranging from 0 (inclusive) to 360 (exclusive).
-        var bgLightness =  Math.round((beta / 180) * 100); //values ranging from -180 (inclusive) to 180 (exclusive). 
+        document.getElementById("hej").innerHTML = Math.round(alpha); //value represents the motion of the device around the z axis, represented in degrees with values ranging from 0 (inclusive) to 360 (exclusive).
+        document.getElementById("hej2").innerHTML =  Math.round((beta / 180) * 100); //values ranging from -180 (inclusive) to 180 (exclusive). 
 
-        var colorHue = (180 + Math.round((alpha / 360) * 100 * 3.6 )) % 360; //value represents the motion of the device around the z axis, represented in degrees with values ranging from 0 (inclusive) to 360 (exclusive).
-        var colorLightness =  (50 + Math.round((beta/ 180) * 100)) % 100; //values ranging from -180 (inclusive) to 180 (exclusive). 
+        document.getElementById("hej3").innerHTML =  (180 + Math.round((alpha / 360) * 100 * 3.6 )) % 360; //value represents the motion of the device around the z axis, represented in degrees with values ranging from 0 (inclusive) to 360 (exclusive).
+        document.getElementById("hej4").innerHTML =  (50 + Math.round((beta/ 180) * 100)) % 100; //values ranging from -180 (inclusive) to 180 (exclusive). 
+        
+        var bgHue = Math.round(alpha); 
+        var bgLightness =  Math.round((beta / 180) * 100); 
+
+        var colorHue = (180 + Math.round((alpha / 360) * 100 * 3.6 )) % 360; 
+        var colorLightness =  (50 + Math.round((beta/ 180) * 100)) % 100; 
         
 
         document.documentElement.style.setProperty("--color", `hsl(${colorHue}, 100%, ${colorLightness}%)`);
