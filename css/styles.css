@@ -20,8 +20,8 @@
 
 @font-face {
     font-family: 'Copyright Klim Type Foundry';
-    src: url('fonts/TestUntitledSans-Regular.woff2') format('woff2'),
-        url('fonts/TestUntitledSans-Regular.woff') format('woff');
+    src: url('/fonts/TestUntitledSans-Regular.woff2') format('woff2'),
+        url('/fonts/TestUntitledSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
