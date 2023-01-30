@@ -167,6 +167,7 @@ p {
     overflow-y: scroll;
     filter: blur(2px);
     -webkit-filter: blur(2px);
+    z-index: -1;
 }
 
 .edit {
