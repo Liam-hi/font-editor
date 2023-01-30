@@ -388,14 +388,14 @@
                     document.getElementById("hej2").innerHTML = beta;
                 }
                 window.addEventListener('deviceorientation', f)
+                function remove() {
+                    window.removeEventListener('deviceorientation', f);
+    }
             }
         })
         .catch(console.error)
         }
-	
-    function remove() {
-        window.removeEventListener('deviceorientation', f);
-    }
+
 
 	
 
