@@ -7,7 +7,7 @@
 :root {
     --bg: #cecece;
     --color: #000;
-    --border-color: #000;
+    --border-color: rgb(30, 28, 28);
     --slider-thumb: #cecece;
     --edit: #c8fe84;
 }
