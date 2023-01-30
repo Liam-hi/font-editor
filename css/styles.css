@@ -8,6 +8,7 @@
     --bg: #cecece;
     --color: #000;
     --border-color: #000;
+    --slider-thumb: #cecece;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -217,7 +218,7 @@ input[type=range] {
     height: 18px;
     border-radius: 50%;
     border: 1px solid var(--color);
-    background-color: #cecece;
+    background-color: var(--slider-thumb);
     cursor: pointer;
     background-clip: padding-box;
 }
@@ -229,7 +230,7 @@ input[type=range] {
     height: 18px;
     border-radius: 50%;
     border: 1px solid var(--color);
-    background-color: #cecece;
+    background-color: var(--slider-thumb);
     cursor: pointer;
 }
 
