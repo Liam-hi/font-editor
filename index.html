@@ -287,6 +287,8 @@
             </div>
             <h1 id="hej">Test</h1>
 		<h1 id="hej2">Test</h1>
+        <h1 id="hej3">Test</h1>
+		<h1 id="hej4">Test</h1>
         <button id="req" >Request orientation permission</button>
         <button id="remove" onclick="removeHandler()">Remove</button>
 <!--             <div class="test">
@@ -383,6 +385,8 @@
         document.getElementById("hej").innerHTML = Math.round(alpha); //value represents the motion of the device around the z axis, represented in degrees with values ranging from 0 (inclusive) to 360 (exclusive).
         document.getElementById("hej2").innerHTML =  Math.round((beta / 180) * 100); //values ranging from -180 (inclusive) to 180 (exclusive). 
 
+        document.getElementById("hej3").innerHTML = Math.round(alpha); //value represents the motion of the device around the z axis, represented in degrees with values ranging from 0 (inclusive) to 360 (exclusive).
+        document.getElementById("hej4").innerHTML =  Math.round((beta / 180) * 100); //values ranging from -180 (inclusive) to 180 (exclusive). 
     }
 	
     function requestOrientationPermission(){
