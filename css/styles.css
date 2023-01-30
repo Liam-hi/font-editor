@@ -123,6 +123,7 @@ body {
     overflow: hidden;
     color: var(--color);
     background: var(--bg);  
+    caret-color: #000;
 }
 
 #edit {
@@ -150,7 +151,6 @@ body {
     text-align: center;
     line-height: 1;
     z-index: 10;
-    -webkit-tap-highlight-color: rgba(251, 185, 250, 0.9);
 }
 
 p {
