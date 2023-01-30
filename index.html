@@ -290,12 +290,12 @@
                 <input type="range" class="slider" id="letter-spacing" step="0.1" value="0" min="0" max="20">
                 <p class="sm-text">67px</p>
             </div>
-            <h1 id="hej">Test</h1>
-		<h1 id="hej2">Test</h1>
-        <h1 id="hej3">Test</h1>
-		<h1 id="hej4">Test</h1>
-        <button id="req" >Request orientation permission</button>
-        <button id="remove" onclick="removeHandler()">Remove</button>
+<!--             <h1 id="hej">Test</h1>
+            <h1 id="hej2">Test</h1>
+            <h1 id="hej3">Test</h1>
+            <h1 id="hej4">Test</h1> -->
+            <button id="req" >Request orientation permission</button>
+            <button id="remove" onclick="removeHandler()">Remove</button>
 <!--             <div class="test">
                 <div class="btn">Letter</div>
                 <div class="btn">Number</div>
@@ -382,16 +382,15 @@
 
 
     function f() {
-        /* const absolute = event.absolute; */
         const alpha = event.alpha;
         const beta = Math.abs(event.beta);
-        /* const gamma = event.gamma; */
 
-        document.getElementById("hej").innerHTML = Math.round(alpha); //value represents the motion of the device around the z axis, represented in degrees with values ranging from 0 (inclusive) to 360 (exclusive).
-        document.getElementById("hej2").innerHTML =  Math.round((beta / 180) * 100); //values ranging from -180 (inclusive) to 180 (exclusive). 
+        // debugging purposes only:
+/*         document.getElementById("hej").innerHTML = Math.round(alpha); 
+        document.getElementById("hej2").innerHTML =  Math.round((beta / 180) * 100);
 
-        document.getElementById("hej3").innerHTML =  (180 + Math.round((alpha / 360) * 100 * 3.6 )) % 360; //value represents the motion of the device around the z axis, represented in degrees with values ranging from 0 (inclusive) to 360 (exclusive).
-        document.getElementById("hej4").innerHTML =  (50 + Math.round((beta/ 180) * 100)) % 100; //values ranging from -180 (inclusive) to 180 (exclusive). 
+        document.getElementById("hej3").innerHTML =  (180 + Math.round((alpha / 360) * 100 * 3.6 )) % 360; 
+        document.getElementById("hej4").innerHTML =  (50 + Math.round((beta/ 180) * 100)) % 100;  */
         
         var bgHue = Math.round(alpha); 
         var bgLightness =  Math.round((beta / 180) * 100); 
