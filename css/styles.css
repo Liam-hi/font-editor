@@ -165,14 +165,14 @@ p {
     width: 100%;
     opacity: 0;
     overflow-y: scroll;
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
 }
 
 .edit {
     height: 2000px;
     width: 100%;
     /* background: #f8f8f8; */
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
 }
 
 .l-text {
