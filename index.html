@@ -308,7 +308,7 @@
     <div id="edit" onclick="toggleIcon()">
         <img src="Controller.svg"/>
     </div>
-    <div id="editable" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    <div onclick="hej()"id="editable" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
        Untitled <br> Sans.s
     </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
@@ -400,6 +400,10 @@
     function removeHandler() {
         console.log('fire');
         document.getElementById('req').removeEventListener("click", requestOrientationPermission);
+    }
+
+    function hej() {
+        console.log('fire');
     }
 
 
