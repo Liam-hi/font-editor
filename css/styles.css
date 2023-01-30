@@ -263,7 +263,7 @@ input[type=range] {
 
   .palette {
     background: conic-gradient(from 90deg, #fff, #000);
-    height: 24px;
-    width: 24px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
   }
