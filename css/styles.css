@@ -11,8 +11,8 @@
 
 @font-face {
     font-family: 'Copyright Klim Type Foundry';
-    src: url('fonts/TestUntitledSans-BlackItalic.woff2') format('woff2'),
-        url('fonts/TestUntitledSans-BlackItalic.woff') format('woff');
+    src: url('/fonts/TestUntitledSans-BlackItalic.woff2') format('woff2'),
+        url('/fonts/TestUntitledSans-BlackItalic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
     font-display: swap;
@@ -29,8 +29,8 @@
 
 @font-face {
     font-family: 'Copyright Klim Type Foundry';
-    src: url('fonts/TestUntitledSans-Bold.woff2') format('woff2'),
-        url('fonts/TestUntitledSans-Bold.woff') format('woff');
+    src: url('/fonts/TestUntitledSans-Bold.woff2') format('woff2'),
+        url('/fonts/TestUntitledSans-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -38,8 +38,8 @@
 
 @font-face {
     font-family: 'Copyright Klim Type Foundry';
-    src: url('fonts/TestUntitledSans-Light.woff2') format('woff2'),
-        url('fonts/TestUntitledSans-Light.woff') format('woff');
+    src: url('/fonts/TestUntitledSans-Light.woff2') format('woff2'),
+        url('/fonts/TestUntitledSans-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -47,8 +47,8 @@
 
 @font-face {
     font-family: 'Copyright Klim Type Foundry';
-    src: url('fonts/TestUntitledSans-Black.woff2') format('woff2'),
-        url('fonts/TestUntitledSans-Black.woff') format('woff');
+    src: url('/fonts/TestUntitledSans-Black.woff2') format('woff2'),
+        url('/fonts/TestUntitledSans-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -56,8 +56,8 @@
 
 @font-face {
     font-family: 'Copyright Klim Type Foundry';
-    src: url('fonts/TestUntitledSans-LightItalic.woff2') format('woff2'),
-        url('fonts/TestUntitledSans-LightItalic.woff') format('woff');
+    src: url('/fonts/TestUntitledSans-LightItalic.woff2') format('woff2'),
+        url('/fonts/TestUntitledSans-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -65,8 +65,8 @@
 
 @font-face {
     font-family: 'Copyright Klim Type Foundry';
-    src: url('fonts/TestUntitledSans-MediumItalic.woff2') format('woff2'),
-        url('fonts/TestUntitledSans-MediumItalic.woff') format('woff');
+    src: url('/fonts/TestUntitledSans-MediumItalic.woff2') format('woff2'),
+        url('/fonts/TestUntitledSans-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -74,8 +74,8 @@
 
 @font-face {
     font-family: 'Copyright Klim Type Foundry';
-    src: url('fonts/TestUntitledSans-BoldItalic.woff2') format('woff2'),
-        url('fonts/TestUntitledSans-BoldItalic.woff') format('woff');
+    src: url('/fonts/TestUntitledSans-BoldItalic.woff2') format('woff2'),
+        url('/fonts/TestUntitledSans-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -83,8 +83,8 @@
 
 @font-face {
     font-family: 'Copyright Klim Type Foundry';
-    src: url('fonts/TestUntitledSans-Medium.woff2') format('woff2'),
-        url('fonts/TestUntitledSans-Medium.woff') format('woff');
+    src: url('/fonts/TestUntitledSans-Medium.woff2') format('woff2'),
+        url('/fonts/TestUntitledSans-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -92,8 +92,8 @@
 
 @font-face {
     font-family: 'Copyright Klim Type Foundry';
-    src: url('fonts/TestUntitledSans-RegularItalic.woff2') format('woff2'),
-        url('fonts/TestUntitledSans-RegularItalic.woff') format('woff');
+    src: url('/fonts/TestUntitledSans-RegularItalic.woff2') format('woff2'),
+        url('/fonts/TestUntitledSans-RegularItalic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
