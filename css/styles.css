@@ -165,9 +165,8 @@ p {
     width: 100%;
     opacity: 0;
     overflow-y: scroll;
-    background: red;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
 }
 
 .edit {
