@@ -375,13 +375,13 @@
 
 
     function f() {
-        const absolute = event.absolute;
+        /* const absolute = event.absolute; */
         const alpha = event.alpha;
         const beta = event.beta;
-        const gamma = event.gamma;
+        /* const gamma = event.gamma; */
 
-        document.getElementById("hej").innerHTML = Math.round(alpha);
-        document.getElementById("hej2").innerHTML = Math.round(beta);
+        document.getElementById("hej").innerHTML = Math.round(alpha); //value represents the motion of the device around the z axis, represented in degrees with values ranging from 0 (inclusive) to 360 (exclusive).
+        document.getElementById("hej2").innerHTML = Math.round(beta); //values ranging from -180 (inclusive) to 180 (exclusive). 
 
     }
 	
