@@ -221,7 +221,7 @@ input[type=range] {
     height: 18px;
     border-radius: 50%;
     border: 1px solid var(--color);
-    background-color: var(--slider-thumb);
+    background-color: var(--bg);
     cursor: pointer;
     background-clip: padding-box;
 }
@@ -233,7 +233,7 @@ input[type=range] {
     height: 18px;
     border-radius: 50%;
     border: 1px solid var(--color);
-    background-color: var(--slider-thumb);
+    background-color: var(--bg);
     cursor: pointer;
 }
 
