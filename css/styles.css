@@ -261,9 +261,16 @@ input[type=range] {
     justify-content: flex-end;
   }
 
-  .palette {
+  .palette-dark {
     background: conic-gradient(from 90deg, #fff, #000);
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+  }
+
+  .palette {
+    background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
   }
