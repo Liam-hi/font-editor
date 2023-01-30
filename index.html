@@ -398,6 +398,7 @@
     document.getElementById("req").addEventListener("click", requestOrientationPermission);
 
     function removeHandler() {
+        console.log('fire');
         document.getElementById('req').removeEventListener("click", requestOrientationPermission);
     }
 
