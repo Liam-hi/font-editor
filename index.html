@@ -370,30 +370,23 @@
         document.getElementById('editable').style.fontSize = fontSize.value+"px";
     }, false);
 	
-function handleOrientation(event) {
-  const absolute = event.absolute;
-  const alpha = event.alpha;
-  const beta = event.beta;
-  const gamma = event.gamma;
-	document.getElementById("hej").innerHTML = alpha;
-
-  // Do stuff with the new orientation data
-}
-	
-window.addEventListener("deviceorientation", handleOrientation);
-	
     function requestOrientationPermission(){
         DeviceOrientationEvent.requestPermission()
         .then(response => {
             if (response == 'granted') {
                 window.addEventListener('deviceorientation', (e) => {
+                    const absolute = event.absolute;
+                    const alpha = event.alpha;
+                    const beta = event.beta;
+                    const gamma = event.gamma;
+
+                    document.getElementById("hej").innerHTML = alpha;
                     // do something with e
                 })
             }
         })
         .catch(console.error)
     }
-
 
 
 
