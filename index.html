@@ -378,17 +378,16 @@
         DeviceOrientationEvent.requestPermission()
         .then(response => {
             if (response == 'granted') {
-                window.addEventListener('deviceorientation', (e) => {
+                const f = () => {
                     const absolute = event.absolute;
                     const alpha = event.alpha;
                     const beta = event.beta;
                     const gamma = event.gamma;
 
                     document.getElementById("hej").innerHTML = alpha;
-            document.getElementById("hej2").innerHTML = beta;
-
-                    // do something with e
-                })
+                    document.getElementById("hej2").innerHTML = beta;
+                }
+                window.addEventListener('deviceorientation', f)
             }
         })
         .catch(console.error)
