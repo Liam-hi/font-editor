@@ -287,7 +287,7 @@
             </div>
             <h1 id="hej">Test</h1>
 		<h1 id="hej2">Test</h1>
-        <button onclick="requestOrientationPermission()"id="req" >Request orientation permission</button>
+        <button id="req" >Request orientation permission</button>
         <button onclick="remove()">Remove</button>
 <!--             <div class="test">
                 <div class="btn">Letter</div>
@@ -309,7 +309,7 @@
         <img src="Controller.svg"/>
     </div>
     <div id="editable" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-       Untitled <br> Sans.
+       Untitled <br> Sans.s
     </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 <script>
@@ -373,26 +373,30 @@
     }, false);
 	
 
+
+    function f() {
+        const absolute = event.absolute;
+        const alpha = event.alpha;
+        const beta = event.beta;
+        const gamma = event.gamma;
+
+        document.getElementById("hej").innerHTML = alpha;
+        document.getElementById("hej2").innerHTML = beta;
+
+    }
 	
     function requestOrientationPermission(){
         DeviceOrientationEvent.requestPermission()
         .then(response => {
             if (response == 'granted') {
-                const f = () => {
-                    const absolute = event.absolute;
-                    const alpha = event.alpha;
-                    const beta = event.beta;
-                    const gamma = event.gamma;
-
-                    document.getElementById("hej").innerHTML = alpha;
-                    document.getElementById("hej2").innerHTML = beta;
-                }
-            window.addEventListener('deviceorientation', f)
+                window.addEventListener('deviceorientation', f)
         }
     })
     
     .catch(console.error)
     }
+
+    document.getElementById("req").addEventListener("click", requestOrientationPermission);
 
 
 	
