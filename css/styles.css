@@ -252,6 +252,7 @@ input[type=range] {
 .color-selection {
     position: fixed;
     padding: 12px;
+    gap: 12px;
     left: 0;
     bottom: 0;
     width: 100%;
