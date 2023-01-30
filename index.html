@@ -287,7 +287,7 @@
             </div>
             <h1 id="hej">Test</h1>
 		<h1 id="hej2">Test</h1>
-		<button id="req" >Request orientation permission</button>
+		<button onclick="requestOrientationPermission()"id="req" >Request orientation permission</button>
 		 <button onclick="removeHandler()">Remove</button>
 <!--             <div class="test">
                 <div class="btn">Letter</div>
@@ -394,13 +394,6 @@
         .catch(console.error)
         }
 
-
-	const myDiv = document.getElementById("req");
-	myDiv.addEventListener("mousemove", requestOrientationPermission);
-
-	function removeHandler() {
-		myDiv.removeEventListener("mousemove", requestOrientationPermission);
-	}
 	
 
 
