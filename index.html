@@ -174,12 +174,15 @@
         var colorHue = (180 + Math.round((alpha / 360) * 100 * 3.6 )) % 360; 
         var colorLightness =  (50 + Math.round((beta/ 180) * 100)) % 100; 
         var colorTri = (220 + Math.round((alpha / 360) * 100 * 3.6 )) % 360; 
+        var colorTriS = (140 + Math.round((alpha / 360) * 100 * 3.6 )) % 360; 
         
 
         document.documentElement.style.setProperty("--color", `hsl(${colorHue}, 100%, ${colorLightness}%)`);
         document.documentElement.style.setProperty("--bg", `hsl(${bgHue}, 100%, ${bgLightness}%)`);
         document.documentElement.style.setProperty("--border-color", `hsl(${colorTri}, 100%, ${colorLightness}%)`);
         document.documentElement.style.setProperty("--slider-thumb", `hsl(${colorHue}, 100%, ${colorLightness}%)`);
+        document.documentElement.style.setProperty("--edit", `hsl(${colorTriS}, 100%, ${colorLightness}%)`);
+
 
     }
 	
