@@ -5,9 +5,20 @@
 }
 
 :root {
-        --bg: #cecece;
-        --color: #000;
-        }
+    --bg: #cecece;
+    --color: #000;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #cecece;
+    background: #000;
+  }
+  
+::selection {
+    color: #cecece;
+    background: #000;
+}
+
 
 @font-face {
     font-family: 'Copyright Klim Type Foundry';
