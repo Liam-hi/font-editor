@@ -288,7 +288,7 @@
             <h1 id="hej">Test</h1>
 		<h1 id="hej2">Test</h1>
         <button id="req" >Request orientation permission</button>
-        <button onclick="remove()">Remove</button>
+        <button id="remove">Remove</button>
 <!--             <div class="test">
                 <div class="btn">Letter</div>
                 <div class="btn">Number</div>
@@ -397,6 +397,10 @@
     }
 
     document.getElementById("req").addEventListener("click", requestOrientationPermission);
+
+    document.getElementById("remove").addEventListener("click", function(){
+        document.getElementById("req").removeEventListener("click", f);
+    });
 
 
 	
