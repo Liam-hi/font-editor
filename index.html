@@ -390,17 +390,18 @@
         .then(response => {
             if (response == 'granted') {
                 window.addEventListener('deviceorientation', f)
-        }
-    })
-    
-    .catch(console.error)
+            }
+        })
+        .catch(console.error)
     }
 
     document.getElementById("req").addEventListener("click", requestOrientationPermission);
 
-    document.getElementById("remove").addEventListener("click", function(){
-        document.getElementById("req").removeEventListener("click", requestOrientationPermission);
-    });
+    function removeHandler() {
+        document.getElementById('req').removeEventListener("click", requestOrientationPermission);
+    }
+
+
 
 
 	
