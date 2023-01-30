@@ -137,6 +137,7 @@ body {
     height: 58px;
     width: 100%;
     z-index: 12;
+    background: #c8fe84;
 }
 
 #editable {
