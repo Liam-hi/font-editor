@@ -13,8 +13,8 @@
         }
 
         :root {
-                --bg: #000;
-                --color: #fff;
+                --bg: #cecece;
+                --color: #000;
                 }
 
         @font-face {
@@ -419,7 +419,10 @@
 
     function removeHandler() {
         console.log('fire');
-        window.removeEventListener('deviceorientation', f)
+        window.removeEventListener('deviceorientation', f);
+        document.documentElement.style.setProperty("--color", `#000`);
+        document.documentElement.style.setProperty("--bg", `#cecece`);
+
     }
 
 
