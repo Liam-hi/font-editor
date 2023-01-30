@@ -136,7 +136,7 @@ body {
     height: 58px;
     width: 100%;
     z-index: 12;
-    background-color: transparent;
+    background-color: #000;
 }
 
 #editable {
