@@ -165,6 +165,7 @@ p {
     width: 100%;
     opacity: 0;
     overflow-y: scroll;
+    background-color: transparent;
 
 }
 
@@ -173,6 +174,7 @@ p {
     height: 2000px;
     width: 100%;
     /* background: #f8f8f8; */
+    background-color: transparent;
 }
 
 .l-text {
