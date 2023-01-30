@@ -261,6 +261,7 @@ input[type=range] {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    z-index: 1000;
   }
 
   .palette-dark {
