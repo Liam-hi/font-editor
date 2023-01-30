@@ -287,7 +287,7 @@
             </div>
             <h1 id="hej">Test</h1>
 		<h1 id="hej2">Test</h1>
-		<button onclick='toggleNav()'>Request orientation permission</button>
+		<button onclick='requestOrientationPermission()'>Request orientation permission</button>
 <!--             <div class="test">
                 <div class="btn">Letter</div>
                 <div class="btn">Number</div>
@@ -374,7 +374,7 @@
     var nav = false;
 	
     function requestOrientationPermission(){
-	    nav = true;
+
         DeviceOrientationEvent.requestPermission()
         .then(response => {
             if (response == 'granted') {
@@ -393,15 +393,7 @@
         })
         .catch(console.error)
     }
-	function closeNav() {
-                 document.getElementById("hej").innerHTML = "hej";
-		document.getElementById("hej2").innerHTML = "hej";
-		nav = false;
-         }
-	
-	    function toggleNav() {
-      nav ? closeNav() : requestOrientationPermission();
-    }
+
 	
 
 
