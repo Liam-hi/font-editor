@@ -287,8 +287,8 @@
             </div>
             <h1 id="hej">Test</h1>
 		<h1 id="hej2">Test</h1>
-		<button onclick="requestOrientationPermission()"id="req" >Request orientation permission</button>
-		 <button onclick="remove()">Remove</button>
+        <button onclick="requestOrientationPermission()"id="req" >Request orientation permission</button>
+        <button onclick="remove()">Remove</button>
 <!--             <div class="test">
                 <div class="btn">Letter</div>
                 <div class="btn">Number</div>
@@ -387,14 +387,12 @@
                     document.getElementById("hej").innerHTML = alpha;
                     document.getElementById("hej2").innerHTML = beta;
                 }
-                window.addEventListener('deviceorientation', f)
-                function remove() {
-                    window.removeEventListener('deviceorientation', f);
-    }
-            }
-        })
-        .catch(console.error)
+            window.addEventListener('deviceorientation', f)
         }
+    })
+    
+    .catch(console.error)
+    }
 
 
 	
