@@ -374,22 +374,20 @@
 	
 
 	
-    function requestOrientationPermission(){
+        function requestOrientationPermission(){
         DeviceOrientationEvent.requestPermission()
         .then(response => {
             if (response == 'granted') {
-		    function handleOrientation(event) {
-			    const absolute = event.absolute;
-			    const alpha = event.alpha;
-			    const beta = event.beta;
-			    const gamma = event.gamma;
-			    document.getElementById("hej").innerHTML = alpha;
-		    }
-		    
-		    window.addEventListener("deviceorientation", handleOrientation);
+                function handleOrientation(event) {
+                    const absolute = event.absolute;
+                    const alpha = event.alpha;
+                    const beta = event.beta;
+                    const gamma = event.gamma;
+                    document.getElementById("hej").innerHTML = alpha;
 
-                    // do something with e
-                })
+                }
+                
+                window.addEventListener("deviceorientation", handleOrientation);
             }
         })
         .catch(console.error)
