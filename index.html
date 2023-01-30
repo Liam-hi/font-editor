@@ -399,7 +399,7 @@
 
     function removeHandler() {
         console.log('fire');
-        document.getElementById('req').removeEventListener("click", requestOrientationPermission);
+        window.removeEventListener('deviceorientation', f)
     }
 
 
