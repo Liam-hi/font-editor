@@ -394,13 +394,13 @@
         .catch(console.error)
     }
 	function closeNav() {
-                 document.getElementById("hej").innerHTML = alpha;
-		document.getElementById("hej2").innerHTML = beta;
+                 document.getElementById("hej").innerHTML = "hej";
+		document.getElementById("hej2").innerHTML = "hej";
 		nav = false;
          }
 	
 	    function toggleNav() {
-      nav ? requestOrientationPermission() : openNav();
+      nav ? closeNav() : requestOrientationPermission();
     }
 	
 
