@@ -138,8 +138,8 @@ body {
     width: 100%;
     z-index: 12;
     background: var(--edit);
-    border-top: 1px solid var(--color);
-    border-bottom: 1px solid var(--color);
+    border-top: 1px solid var(--edit);
+    border-bottom: 1px solid var(--edit);
 }
 
 #editable {
