@@ -138,7 +138,8 @@ body {
     width: 100%;
     z-index: 12;
     background: var(--edit);
-    border: 1px solid var(--color);
+    border-top: 1px solid var(--color);
+    border-bottom: 1px solid var(--color);
 }
 
 #editable {
@@ -222,8 +223,7 @@ input[type=range] {
     height: 18px;
     border-radius: 50%;
     /* border: 1px solid var(--color); */
-    border-top: 1px solid var(--bg);
-    border-bottom: 1px solid var(--bg);
+    border: 1px solid var(--color);
     background-color: var(--bg);
     cursor: pointer;
     background-clip: padding-box;
@@ -235,8 +235,7 @@ input[type=range] {
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    border-top: 1px solid var(--bg);
-    border-bottom: 1px solid var(--bg);
+    border: 1px solid var(--color);
     background-color: var(--bg);
     cursor: pointer;
 }
