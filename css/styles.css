@@ -137,7 +137,7 @@ body {
     height: 58px;
     width: 100%;
     z-index: 12;
-    background: var(--edit);
+    background: var(--bg);
     border-top: 1px solid var(--edit);
     border-bottom: 1px solid var(--edit);
 }
