@@ -138,6 +138,7 @@ body {
     width: 100%;
     z-index: 12;
     background: var(--edit);
+    border: 1px solid var(--color);
 }
 
 #editable {
@@ -220,7 +221,8 @@ input[type=range] {
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    border: 1px solid var(--color);
+    /* border: 1px solid var(--color); */
+    border: 1px solid var(--bg);
     background-color: var(--bg);
     cursor: pointer;
     background-clip: padding-box;
@@ -232,7 +234,7 @@ input[type=range] {
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    border: 1px solid var(--color);
+    border: 1px solid var(--bg);
     background-color: var(--bg);
     cursor: pointer;
 }
