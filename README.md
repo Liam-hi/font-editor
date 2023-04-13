@@ -1,3 +1,3 @@
 # sensor-based-interaction-design
 
-The objective of this prototype is to investigate interaction design that utilizes mobile sensors.
+The objective of this prototype is to investigate interaction design that utilises mobile sensors.
